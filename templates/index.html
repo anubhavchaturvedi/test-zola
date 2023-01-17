@@ -108,7 +108,7 @@
         {%- endblock content -%}
         {%- block sidebar %}
         <aside class="sidebar">
-            {%- for sidebar in config.extra.sidebar %}
+            {%- for sidebar in config.extra.social %}
             <h3>{{ sidebar.name }}</h3>
             <ul class="base-list">
                 {%- for item in sidebar.urls %}
