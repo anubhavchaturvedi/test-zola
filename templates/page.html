@@ -17,7 +17,7 @@
     <meta itemprop="image" content="{{config.extra.og_image}}">
     {% endif %}
     {% endif %}
-    <header>
+    <aside class="post__sidebar">
         {% if page.taxonomies.categories %}
         <a class="category" href="{{ get_taxonomy_url(kind="categories", name=page.taxonomies.categories[0]) }}">
             {{ page.taxonomies.categories[0] }}
@@ -57,12 +57,12 @@
             </div>
             {% endif %}
         </div>
-    </header>
-    <div itemprop="articleBody" class="body">
+    </aside>
+    <div itemprop="articleBody" class="post__content">
         {{ page.content | safe }}
     </div>
 </article>
 
 {% endblock content %}
-{% block sidebar %}
-{% endblock sidebar %}
+{% block social %}
+{% endblock social %}

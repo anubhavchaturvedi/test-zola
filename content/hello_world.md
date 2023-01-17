@@ -30,8 +30,13 @@ native integer both indivisible and divisible.
 
 It is very simple to create one:
 
-```rust
+```rust,linenos
 let atomic_bool = AtomicBool::new(true);
+let a = 5;
+
+let c = 4;
 ```
+
+Thi is a `jbsdjbhfd` text
 
 hjsdjhfsd
